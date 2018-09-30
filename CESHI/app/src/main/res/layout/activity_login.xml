@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#0093DD"
+        android:layout_height="45dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/returnbacks_iv"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/returnback"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taitle_tv"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:text="用户登录"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:padding="15dip"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:padding="15dip"
+            android:background="@drawable/shape_phone_for_header_tv">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:id="@+id/shop_et"
+                android:hint="供应商简称"
+                android:background="@drawable/shape_from_album_tv"
+                android:layout_weight="1"
+                android:textSize="16dip"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dip"
+            android:background="#fff">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uername_et"
+                android:layout_marginLeft="10dip"
+                android:hint="用户名"
+                android:background="@drawable/shape_from_album_tv"
+                android:layout_weight="1"
+                android:textSize="16dip"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_from_album_tv"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:id="@+id/passsword_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/shape_from_album_tv"
+                android:textSize="16dip" />
+
+            <ImageView
+                android:id="@+id/hidepassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/hide" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:id="@+id/logon_bt"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="18dip"
+            android:background="@drawable/ok_button_shap"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

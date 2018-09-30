@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startTrunk.WagonNmbActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_infomation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#0093DD"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:id="@+id/returnbacks_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/returnback" />
+
+            <TextView
+                android:id="@+id/taitle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="车皮号录入"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/save_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:src="#d6d6d6" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6" />
+
+        <Spinner
+            android:id="@+id/spin_chedao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownVerticalOffset="28dp"
+            android:entries="@array/spingarr"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/wagon_et"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:hint="请输入车皮号" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:src="@drawable/pho" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6" />
+
+        <Spinner
+            android:id="@+id/spin_zhandian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:dropDownVerticalOffset="15dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/wagontype_tv"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/wagonState_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownVerticalOffset="15dp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#d6d6d6" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/ll_infomation"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:id="@+id/viewPager_layout">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/train_vp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:clipChildren="false"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content">
+            ></android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+</RelativeLayout>

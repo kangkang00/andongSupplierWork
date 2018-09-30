@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>第一道</item>
+        <item>第二道</item>
+    </string-array>
+
+    <string-array name="zhandian">
+        <item>andong</item>
+        <item>andting</item>
+    </string-array>
+
+    <string-array name="wagontype">
+        <item>8011,J5SQ,6</item>
+        <item>8020,J6SQ,6</item>
+        <item>7520,JSQ4,6</item>
+        <item>7400,JSQ3,8</item>
+        <item>7350,JSQ1,8</item>
+        <item>7300,JSQ5,10</item>
+        <item>7301,JSQ5,10</item>
+        <item>753,JSQ6,10</item>
+        <item>754,JSQ6,10</item>
+    </string-array>
+
+</resources>
